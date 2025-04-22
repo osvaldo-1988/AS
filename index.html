@@ -44,13 +44,13 @@
       <img src="logo.png" alt="Logo A&S" class="logo" />
     </div>
     <h1>A&S SERVICES LLC</h1>
-    <p class="tagline">Servicio de Handyman & TÃ©cnico Automotriz en PR</p>
+    <p class="tagline">Servicio de Handyman & Técnico Automotriz en PR</p>
     <nav>
       <a href="#servicios">Servicios Handyman</a>
-      <a href="#servicios2">MecÃ¡nica</a>
-      <a href="#contÃ¡ctanos">ContÃ¡ctanos</a>
-      <a href="#quienes">QuiÃ©nes somos</a>
-      <a href="#ubicacion">UbicaciÃ³n</a>
+      <a href="#servicios2">Mecánica</a>
+      <a href="#contacto">Contáctanos</a>
+      <a href="#quienes">Quiénes somos</a>
+      <a href="#ubicacion">Ubicación</a>
       <a href="#orden">Orden</a>
     </nav>
   </header>
@@ -59,25 +59,25 @@
       <h2>Servicios Handyman</h2>
       <ul>
         <li>Electricidad</li>
-        <li>PlomerÃ­a</li>
-        <li>ConstrucciÃ³n en General</li>
-        <li>EbanisterÃ­a</li>
+        <li>Plomería</li>
+        <li>Construcción en General</li>
+        <li>Ebanistería</li>
         <li>Pintura Interior y Exterior</li>
         <li>Soldadura</li>
       </ul>
     </section>
     <section id="servicios2">
-      <h2>Servicios de MecÃ¡nica</h2>
+      <h2>Servicios de Mecánica</h2>
       <ul>
-        <li>DiagnÃ³stico de Fallas</li>
+        <li>Diagnóstico de Fallas</li>
         <li>Mantenimiento preventivo</li>
         <li>Generadores Residencial, Comercial e Industrial</li>
         <li>Flotas Comerciales</li>
-        <li>ReparaciÃ³n General</li>
+        <li>Reparación General</li>
       </ul>
     </section>
-    <section id="contÃ¡ctanos">
-      <h2>ContÃ¡ctanos</h2>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
       <ul>
         <li><a href="https://wa.me/17874579452" target="_blank">WhatsApp</a></li>
         <li><a href="mailto:as24.7services@gmail.com">as24.7services@gmail.com</a></li>
@@ -85,17 +85,17 @@
       </ul>
     </section>
     <section id="quienes">
-      <h2>Â¿QuiÃ©nes somos?</h2>
-      <p>En <strong>A&S Services LLC</strong>, somos un equipo comprometido con brindar soluciones confiables y de alta calidad en Servicios y Mantenimiento en el hogar y vehÃ­culos. Nuestra misiÃ³n es ofrecer un servicio rÃ¡pido, transparente y eficiente, cuidando cada detalle en cada trabajo.</p>
+      <h2>¿Quiénes somos?</h2>
+      <p>En <strong>A&S Services LLC</strong>, somos un equipo comprometido con brindar soluciones confiables y de alta calidad en Servicios y Mantenimiento en el hogar y vehículos. Nuestra misión es ofrecer un servicio rápido, transparente y eficiente, cuidando cada detalle en cada trabajo.</p>
     </section>
     <section id="ubicacion">
-      <h2>Â¿DÃ³nde estamos?</h2>
-      <p><strong>DirecciÃ³n:</strong> Lares, Puerto Rico</p>
+      <h2>¿Dónde estamos?</h2>
+      <p><strong>Dirección:</strong> Lares, Puerto Rico</p>
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3808.4267321061013!2d-66.8411814!3d18.260234"
         width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
     </section>
     <section id="orden">
-      <h2>Â¿QuÃ© deseas hacer?</h2>
+      <h2>¿Qué deseas hacer?</h2>
       <button onclick="mostrar('formulario')">Enviar nueva solicitud</button>
       <button onclick="mostrar('seguimiento')">Ver estado de orden</button>
       <div id="formulario" class="hidden">
@@ -103,22 +103,22 @@
         <form action="mailto:as24.7services@gmail.com" method="POST" enctype="text/plain">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="Nombre" required>
-          <label for="telefono">TelÃ©fono:</label>
-          <input type="tel" id="telefono" name="TelÃ©fono" required>
+          <label for="telefono">Teléfono:</label>
+          <input type="tel" id="telefono" name="Teléfono" required>
           <label for="email">Email:</label>
           <input type="email" id="email" name="Email">
-          <label for="direccion">DirecciÃ³n del Servicio:</label>
-          <input type="text" id="direccion" name="DirecciÃ³n">
+          <label for="direccion">Dirección del Servicio:</label>
+          <input type="text" id="direccion" name="Dirección">
           <label for="tipo">Tipo de Servicio:</label>
           <select id="tipo" name="Tipo de Servicio">
             <option value="Handyman">Handyman</option>
-            <option value="MecÃ¡nica">MecÃ¡nica Automotriz</option>
+            <option value="Mecánica">Mecánica Automotriz</option>
             <option value="Otro">Otro</option>
           </select>
           <label for="pin">Pin de Google Maps (GPS):</label>
           <input type="text" id="pin" name="Pin Google Maps" placeholder="Ej. 18.2602340, -66.8411814">
-          <label for="detalle">DescripciÃ³n del Trabajo:</label>
-          <textarea id="detalle" name="DescripciÃ³n" rows="5" required></textarea>
+          <label for="detalle">Descripción del Trabajo:</label>
+          <textarea id="detalle" name="Descripción" rows="5" required></textarea>
           <button type="submit">Enviar Orden</button>
         </form>
       </div>
@@ -148,7 +148,7 @@
     function consultarEstado() {
       const codigo = document.getElementById("codigo").value.trim();
       if (!codigo) {
-        document.getElementById("resultado").textContent = "Por favor escribe un cÃ³digo.";
+        document.getElementById("resultado").textContent = "Por favor escribe un código.";
         return;
       }
       fetch("https://script.google.com/macros/s/AKfycbzAF1hCo-qVd_4qmfca9OVH7ZRc3zF5tUobzJsgHwuOPA4taeoQgj-vLuzQd_JG-LGcIw/exec?codigo=" + encodeURIComponent(codigo))
