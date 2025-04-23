@@ -165,7 +165,7 @@
         document.getElementById("resultado").textContent = "Por favor escribe un código.";
         return;
       }
-      fetch("https://https://script.google.com/macros/s/AKfycbytNyGBjcp4wtLsdxznz8lH1N4McBuJjTThIzt4DqUSEANQz_1f881GTaK5hWByqQodHw/exec?codigo=" + encodeURIComponent(codigo))
+      fetch("https://script.google.com/macros/s/AKfycbyX5JkjgoiDUD0kf0FjNeZRQMD-Qr_oBTyW9UyJHPGn/dev?codigo=" + encodeURIComponent(codigo))
         .then(res => res.text())
         .then(data => {
           document.getElementById("resultado").textContent = "Estado: " + data;
